@@ -1,0 +1,10 @@
+.idea
+.project
+.pydevproject
+*local_settings.py
+*.bak
+*.pyc
+*.py~
+*.sqlite
+*.sqlite3
+*__pycache__
