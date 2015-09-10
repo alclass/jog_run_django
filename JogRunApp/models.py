@@ -1,10 +1,11 @@
 from django.db import models
+from django.utils import timezone # timezone.now
 from datetime import datetime
 # Create your models here.
 
 class JogRunRecord(models.Model):
-  jogrun_date       = models.DateField(default=datetime.today())
-  startline_daytime = models.TimeField(default=datetime.now())
+  jogrun_date       = models.DateField(default=timezone.now)
+  startline_daytime = models.TimeField(default=timezone.now)
   from_stamp = models.CharField(max_length=10)
   to_stamp   = models.CharField(max_length=10)
   duration = models.IntegerField(default=0) # in seconds
